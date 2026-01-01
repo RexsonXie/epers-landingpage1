@@ -1390,16 +1390,6 @@
                 dot.onclick = () => goToSlide(index);
                 dotsContainer.appendChild(dot);
             });
-
-            // Hide carousel if no valid images
-            const validImages = Array.from(slides).filter(slide => {
-                const img = slide.querySelector('img');
-                return img && img.complete && img.naturalWidth !== 0;
-            });
-
-            if (validImages.length === 0) {
-                document.getElementById('certCarousel').style.display = 'none';
-            }
         }
 
         function moveCarousel(direction) {
