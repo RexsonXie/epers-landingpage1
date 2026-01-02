@@ -41,6 +41,38 @@
             color: var(--text-dark);
         }
 
+        /* TRUST LAYER - Top Bar */
+        .trust-layer {
+            background-color: var(--white);
+            padding: 12px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .trust-layer .container {
+            display: flex;
+            align-items: center;
+        }
+
+        .trust-logo {
+            height: 50px;
+            display: flex;
+            align-items: center;
+            pointer-events: none;
+        }
+
+        .trust-logo img {
+            height: 100%;
+            width: auto;
+            display: block;
+        }
+
+        .trust-logo-text {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--dark-blue);
+            letter-spacing: 1px;
+        }
+
         .container {
             max-width: 1200px;
             margin: 0 auto;
@@ -925,6 +957,15 @@
     </style>
 </head>
 <body>
+
+    <!-- TRUST LAYER - Top Bar -->
+    <div class="trust-layer">
+        <div class="container">
+            <div class="trust-logo">
+                <img src="images/logo.png" alt="EPERS">
+            </div>
+        </div>
+    </div>
 
     <!-- HERO SECTION -->
     <section class="hero">
