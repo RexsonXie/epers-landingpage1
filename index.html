@@ -219,6 +219,13 @@
             font-weight: 500;
         }
 
+        .hero-credibility {
+            margin-top: 15px;
+            font-size: 0.85rem;
+            opacity: 0.8;
+            font-weight: 400;
+        }
+
         .trust-line {
             margin-top: 20px;
             font-size: 0.9rem;
@@ -980,6 +987,8 @@
 
             <a href="#inquiry-form" class="cta-button">Get a Free Factory Quote Within 24 Hours</a>
 
+            <p class="hero-credibility">Direct manufacturer with stable export orders for 10+ years</p>
+
             <p class="trust-line">✓ Factory Direct | ✓ Fast Response | ✓ OEM Available</p>
         </div>
     </section>
@@ -1259,7 +1268,7 @@
                         <label for="message">Message / Requirement *</label>
                         <textarea id="message" name="message" required placeholder="Please tell us:&#10;• CBB60 or CBB61&#10;• Capacitance & voltage&#10;• Application&#10;• Estimated quantity"></textarea>
                     </div>
-                    <button type="submit" class="cta-button" id="submitBtn">Send Inquiry Now</button>
+                    <button type="submit" class="cta-button" id="submitBtn">Get Factory Quote Now</button>
                     <p class="privacy-note">Your information will be kept strictly confidential.</p>
                 </form>
                 <div id="successMessage" class="success-message" style="display: none;">
@@ -1304,8 +1313,8 @@
                     <p>A: Please provide capacitance, voltage, quantity, application, and target market. The more details you provide, the more accurate our quotation will be.</p>
                 </div>
                 <div class="faq-item">
-                    <h4>Q7: How is your price compared to other suppliers?</h4>
-                    <p>A: As a direct manufacturer, our price is factory-based and depends on specification, quantity and target market. Please contact us for an accurate quotation.</p>
+                    <h4>Q7: Can you offer competitive pricing compared with local suppliers?</h4>
+                    <p>A: As a direct manufacturer in China, our pricing is factory-based and highly competitive for bulk orders, while ensuring stable quality and international compliance.</p>
                 </div>
             </div>
         </div>
@@ -1462,7 +1471,7 @@
                     errorMessage.innerHTML = '<strong>Submission failed.</strong><br>' + (result.message || 'Please try again or email us directly at sales@eperscapacitor.com');
                     errorMessage.style.display = 'block';
                     submitBtn.disabled = false;
-                    submitBtn.textContent = 'Send Inquiry Now';
+                    submitBtn.textContent = 'Get Factory Quote Now';
                 }
             } catch (error) {
                 errorMessage.innerHTML = '<strong>Submission failed.</strong><br>Please try again or email us directly at sales@eperscapacitor.com';
