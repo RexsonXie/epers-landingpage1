@@ -6,6 +6,14 @@
     <meta name="description" content="Motor Run Capacitor Manufacturer | Reliable CBB60 & CBB61 Capacitors for HVAC, Pumps and Motors | Factory Direct Supply | 20+ Years Manufacturing Experience">
     <title>Motor Run Capacitor Manufacturer | CBB60 & CBB61</title>
 
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5KGGC4L3');</script>
+    <!-- End Google Tag Manager -->
+
     <!-- Google Analytics 4 (GA4) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-LDQCHFQWW"></script>
     <script>
@@ -657,6 +665,66 @@
             }
         }
 
+        /* Floating Contact Sidebar */
+        .floating-contact {
+            position: fixed;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 999;
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+        }
+
+        .floating-contact .contact-item {
+            display: flex;
+            align-items: center;
+            background-color: var(--primary-blue);
+            color: var(--white);
+            padding: 12px 15px 12px 12px;
+            text-decoration: none;
+            transition: all 0.3s;
+            border-left: 3px solid var(--dark-blue);
+        }
+
+        .floating-contact .contact-item:hover {
+            background-color: var(--dark-blue);
+            padding-right: 25px;
+        }
+
+        .floating-contact .contact-item .contact-label {
+            white-space: nowrap;
+            font-size: 0.85rem;
+            font-weight: 500;
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+            transform: rotate(180deg);
+            letter-spacing: 1px;
+        }
+
+        .floating-contact .contact-item .contact-icon {
+            font-size: 1.2rem;
+            margin-right: 8px;
+        }
+
+        .floating-contact .contact-item.whatsapp {
+            background-color: #25D366;
+            border-left-color: #128C7E;
+        }
+
+        .floating-contact .contact-item.whatsapp:hover {
+            background-color: #128C7E;
+        }
+
+        @media (max-width: 768px) {
+            .floating-contact {
+                top: auto;
+                bottom: 60px;
+                transform: none;
+            }
+        }
+
         /* SECTION 8 - Form */
         .form-section {
             background-color: var(--light-blue);
@@ -966,6 +1034,11 @@
     </style>
 </head>
 <body>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5KGGC4L3"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
     <!-- TRUST LAYER - Top Bar -->
     <div class="trust-layer">
@@ -1353,6 +1426,18 @@
         </div>
     </footer>
 
+    <!-- Floating Contact Sidebar -->
+    <div class="floating-contact">
+        <a href="mailto:sales@eperscapacitor.com" class="contact-item">
+            <span class="contact-icon">✉</span>
+            <span class="contact-label">EMAIL</span>
+        </a>
+        <a href="https://wa.me/8613925385472" class="contact-item whatsapp">
+            <span class="contact-icon">💬</span>
+            <span class="contact-label">WHATSAPP</span>
+        </a>
+    </div>
+
     <script>
         // Carousel functionality
         let currentSlide = 0;
@@ -1498,4 +1583,3 @@
 
 </body>
 </html>
-
