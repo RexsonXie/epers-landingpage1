@@ -1323,21 +1323,6 @@
                         <input type="email" id="email" name="email" required>
                     </div>
                     <div class="form-group">
-                        <label for="country">Country / Region *</label>
-                        <input type="text" id="country" name="country" required>
-                    </div>
-                    <div class="form-group">
-                        <label>Product Interest:</label>
-                        <div class="checkbox-group">
-                            <label class="checkbox-item">
-                                <input type="checkbox" name="product_cbb60" value="Yes"> CBB60
-                            </label>
-                            <label class="checkbox-item">
-                                <input type="checkbox" name="product_cbb61" value="Yes"> CBB61
-                            </label>
-                        </div>
-                    </div>
-                    <div class="form-group">
                         <label for="message">Message / Requirement *</label>
                         <textarea id="message" name="message" required placeholder="Please tell us:&#10;• CBB60 or CBB61&#10;• Capacitance & voltage&#10;• Application&#10;• Estimated quantity"></textarea>
                     </div>
@@ -1498,30 +1483,6 @@
             submitBtn.textContent = 'Sending...';
 
             const formData = new FormData(form);
-
-            // Build product interest string
-            let productInterest = [];
-            if (formData.get('product_cbb60')) productInterest.push('CBB60');
-            if (formData.get('product_cbb61')) productInterest.push('CBB61');
-
-            // Get quantity selection
-            const quantity = formData.get('quantity');
-            // Update hidden field for Web3Forms
-            if (quantity) {
-                document.getElementById('quantity_hidden').value = quantity;
-            }
-
-            // Add product info and quantity to message
-            const message = formData.get('message');
-            let enhancedMessage = '';
-            if (productInterest.length > 0) {
-                enhancedMessage += `Product Interest: ${productInterest.join(', ')}\n`;
-            }
-            if (quantity) {
-                enhancedMessage += `Estimated Order Quantity: ${quantity}\n`;
-            }
-            enhancedMessage += `\n${message}`;
-            formData.set('message', enhancedMessage);
 
             try {
                 const response = await fetch('https://api.web3forms.com/submit', {
